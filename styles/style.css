@@ -293,7 +293,6 @@ nav#main-nav > * {
 #testimonials .container .col-1-2 {
 	margin-top: 4rem;
 }
-
 #testimonials .container .col-1-2 h4 {
 	color: #898989;
 	font-size: 18px;
@@ -402,5 +401,118 @@ nav#main-nav > * {
 #discount-page {
 	width: 100%;
 	height: 30vh;
-	background: radial-gradient(circle, rgba(0, 0, 0, .6) 30%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(/images/pexels-photo-897271.jpeg) no-repeat center / cover;
+	background: radial-gradient(circle, rgba(0, 0, 0, .8) 40%, rgba(0, 0, 0, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(/images/pexels-photo-897271.jpeg) no-repeat center / cover;
+}
+#discount-page .container .col-1-4 {
+	text-align: center;
+}
+#discount-page .container .col-1-4 h1 {
+	color: var(--primary-color);
+	margin-top: 3rem;
+	font-size: 48px;
+	text-shadow: 2px 2px black;
+	font-weight: 400;
+	letter-spacing: 2.5px;
+}
+#discount-page .container .col-1-4 p {
+	margin-top: 0;
+	color: #ffffff;
+	font-weight: lighter;
+}
+#discount-page .container .col-1-4 h2 {
+	margin-top: 20px;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+#discount-page .container .col-1-4 button {
+	margin-top: 10px;
+	border: none;
+	background-color: var(--primary-color);
+}
+
+/** appointment-page **/
+#appointment-page .container {
+	padding-top: 5rem;
+}
+#appointment-page .container .col-1-4 {
+	color: #898989;
+}
+#appointment-page .container .col-1-4 h4 {
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+#appointment-page .container .col-1-4 h1 {
+	color: var(--primary-color);
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: 1.8px;
+	text-align: center;
+}
+#appointment-page .container .col-1-4:nth-child(2) {
+	padding: 0;
+	font-weight: 300;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: start;
+	gap: 40px;
+}
+#appointment-page .container .col-1-4:nth-child(2) .col-1-2 .col-1-2 {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+#appointment-page .container .col-1-4:nth-child(2) .col-1-2 .col-1-2 h4 {
+
+}
+
+/** Map **/
+#map-page {
+	width: 100%;
+	height: 50vh;
+	background: url(/images/map.jpg) no-repeat top center / cover;
+}
+
+/** Footer **/
+#bottom-footer {
+	width: 100%;
+	height: 31vh;
+	background-color: black;
+}
+#bottom-footer .container {
+	padding: 40px 0;
+	text-align: center;
+}
+#bottom-footer .container h1 {
+	color: var(--primary-color);
+	font-size: 70px;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+#bottom-footer .container ul {
+	text-decoration: none;
+	list-style: none;
+}
+#bottom-footer .container ul li {
+	display: inline-block;
+	padding: 5px;
+}
+#bottom-footer .container ul li a {
+	color: #ffffff;
+}
+#bottom-footer .container .icons {
+	padding: 20px;
+}
+#bottom-footer .container .icons svg {
+	color: var(--primary-color);
+	margin-left: 15px;
+	cursor: pointer;
+}
+#bottom-footer .container p {
+	color:#ececec;
 }
