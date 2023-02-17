@@ -53,6 +53,16 @@ header {
 	background: url(../images/header.jpg) no-repeat top center;
 	background-size: cover;
 }
+input, textarea {
+	padding: 10px;
+	font-family: var(--p-font);
+	color: #898989;
+	border-radius: 5px;
+	border: 1px solid #c1c1c1;
+}
+textarea {
+	resize: none;
+}
 button {
 	text-transform: uppercase;
 	background-color: transparent;
@@ -61,7 +71,9 @@ button {
 	padding: 13px 30px;
 	border-radius: 25px;
 }
-
+::placeholder {
+	color: #898989;
+}
 button:hover {
 	cursor: pointer;
 }
@@ -400,7 +412,7 @@ nav#main-nav > * {
 /** Discount **/
 #discount-page {
 	width: 100%;
-	height: 30vh;
+	height: 33vh;
 	background: radial-gradient(circle, rgba(0, 0, 0, .8) 40%, rgba(0, 0, 0, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(/images/pexels-photo-897271.jpeg) no-repeat center / cover;
 }
 #discount-page .container .col-1-4 {
@@ -434,10 +446,11 @@ nav#main-nav > * {
 
 /** appointment-page **/
 #appointment-page .container {
-	padding-top: 5rem;
+	padding: 5rem 0;
 }
 #appointment-page .container .col-1-4 {
 	color: #898989;
+	font-weight: 300;
 }
 #appointment-page .container .col-1-4 h4 {
 	font-size: 18px;
@@ -453,22 +466,68 @@ nav#main-nav > * {
 	letter-spacing: 1.8px;
 	text-align: center;
 }
-#appointment-page .container .col-1-4:nth-child(2) {
-	padding: 0;
-	font-weight: 300;
+#appointment-page .container .col-1-4:last-child {
+	padding-top: 0;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: start;
-	gap: 40px;
+	gap: 20px;
 }
-#appointment-page .container .col-1-4:nth-child(2) .col-1-2 .col-1-2 {
-	padding-top: 50px;
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 {
+	margin-top: 30px;
+	color: #898989;
 	display: flex;
-	flex-direction: column;
 }
-#appointment-page .container .col-1-4:nth-child(2) .col-1-2 .col-1-2 h4 {
-
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 h5 {
+	font-family: var(--p-font);
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 .contact-info p{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 .contact-info p svg {
+	color: var(--primary-color);
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 .work-hours div p {
+	margin-top: 0;
+	padding-bottom: 10px;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 .work-hours div:last-child {
+	padding-left: 30px;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form {
+	padding-top: 10px;
+	display: grid;
+	grid-template-areas: 
+			"name phone-number"
+			"email email"
+			"message message"
+			".submit";
+		gap: 10px;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form input[type="text"] {
+	grid-area: name;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form input[type="tel"] {
+	grid-area: phone-number;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form input[type="email"] {
+	grid-area: email;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form textarea {
+	grid-area: message;
+}
+#appointment-page .container .col-1-4:last-child .col-1-2:last-child form > button {
+	grid-area: submit;
+	width: 70%;
+	background-color: #daa520;
+	justify-self: end;
 }
 
 /** Map **/
