@@ -1,0 +1,217 @@
+/** laptop **/
+@media only screen and (max-width: 1280px) {
+	header {
+		background-position: left center;
+	}
+	.container {
+		padding: 0 3rem;
+	}
+
+	/** header page **/
+	#page-title .container .col-1-2 {
+		margin-top: 12rem;
+		width: 55%;
+	}
+
+	#page-title .container .col-1-2 {
+		margin-top: 13rem;
+		width: 60%;
+	}
+
+	/* Story */
+	#story-page .container .col-1-2 img {
+		width: 100%;
+	}
+
+	/* Testimonials */
+	#testimonials {
+		background-position: 50% 50%;
+	}
+	#testimonials .container .col-1-2 {
+		margin-top: 30px;
+	}
+
+	/* Discount */
+	#discount-page {
+		height:35vh;
+	}
+
+	/** Appointment **/
+	#appointment-page .container {
+		margin-top: 5rem;
+		padding: 0 2rem;
+		margin-bottom: 5rem;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 {
+		flex-direction: row;
+		width: 100%;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 > .work-hours {
+		width: 75%;
+	}
+
+	#bottom-footer {
+		height: 35vh;
+	}
+}
+
+
+
+/******* Tablet **/
+@media only screen and (max-width: 1024px) {
+	p, span {
+		font-size: 12px;
+	}
+	li {
+		font-size: 12px;
+	}
+	button {
+		font-size: 12px;
+	}
+	header {
+		height: 80vh;
+	}
+
+	/* Header */
+	#top-header .container .col-1-1 a {
+		font-size: 35px;
+	}
+	#page-title .container .col-1-2 {
+		margin-top: 9rem;
+		width: auto;
+	}
+	#page-title .container .col-1-2 p {
+		width: 60%;
+	}
+	#page-title .container .col-1-2 h1 {
+		font-size: 40px;
+	}
+
+	/** Story **/
+	#story-page .container {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	#story-page .container .col-1-2 {
+		width: 100%;
+		padding: 0 100px;
+	}
+	#story-page .container .col-1-2 h4,
+	#story-page .container .col-1-2 h1 {
+		text-align: center;
+	}
+	#story-page .container .col-1-2 button {
+		text-align: center;
+	}
+	#story-page .container .col-1-2 img {
+		width: 100%;
+	}
+	#story-page .container .col-1-2 {
+		text-align: center;
+	}
+	#story-page .container .col-1-2:last-child {
+		margin-top: -20px;
+	}
+
+	/** Services **/
+	#service-page .container .col-1-4:last-child {
+		flex-flow: row wrap;
+		justify-content:center;
+	}
+	#service-page .container .col-1-4 .col-3 {
+		flex-basis: 40%;
+	}
+
+	/** team **/
+	#team-page .container .col-1-4:last-child {
+		flex-flow: row wrap;
+		justify-content:center;
+	}
+	#team-page .container .col-1-4 .col-3 {
+		flex-basis: 40%;
+	}
+
+	/** testimonials **/
+	#testimonials .container .col-1-2 {
+		width: 60%;
+	}
+
+	/** Appointment **/
+	#appointment-page .container .col-1-4:last-child {
+		flex-flow: column wrap;
+	}
+
+	#appointment-page .container .col-1-4:last-child {
+		/* padding: 0 20px; */
+		gap: 0;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#appointment-page .container .col-1-4:last-child {
+		padding: 0 50px;
+	}
+	#appointment-page .container * .col-1-2 {
+		width: 100%;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:last-child form > button {
+		width: 50%;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 {
+		padding: 0;
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-areas: 
+			"contact work-hours time";
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 > .work-hours {
+		width: 250px;
+		display: grid;
+		grid-template-areas: 
+				"title title"
+				"day time";
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 > .work-hours h5 {
+		grid-area: title;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 > .work-hours div:first-child {
+		grid-area: day;
+	}
+	#appointment-page .container .col-1-4:last-child .col-1-2:first-child .col-1-4 > .work-hours div:last-child {
+		grid-area: time;
+	}
+
+	/** map **/
+	#map-page {
+		height: 30vh;
+	}
+
+	/** Footer **/
+	#bottom-footer {
+		height: 25vh;
+	}
+	#bottom-footer .container h1 {
+		font-size: 45px;
+	}
+	#bottom-footer .container .icons {
+		padding: 10px;
+	}
+	#bottom-footer .container p {
+		margin-top: 0;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/* 
+1020
+768
+480 
+*/
